@@ -1,13 +1,24 @@
-#summary One-sentence summary of this page.
+#summary So easy to use!
 
 = Introduction =
 
-Add your content here.
-
+== 3 easy steps:==
+  # Include jQuery.js in your page
+  # Include jquery.customselect.js in your page
+  # onDOMReady Let the script to it's magic
 
 = Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  # Include jQuery.js in your page, preferredly right before the closing body-Tag. Minimum Version required is jQuery 1.4.
+  # Include jquery.customselect.js in your page
+{{{
+<script type="text/javascript" src="/path/to/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="jquery.customselect.js"></script>
+}}}
+  # Let the script to its magic
+{{{
+<script type="text/javascript">
+$(document).ready(function(){
+    $('select').customSelect();
+});
+</script>
+}}}
